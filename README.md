@@ -1,1 +1,5 @@
 # Notes-On-Remaking-Android
+
+As explained in Notes-on-Robotics, I've spent (half of) the last few weeks developing `voxl-apps`. The past few days have involved many discussions and redesigns and re-coding of the whole architecture. Here, I want to explain what we've arrived at as of 7/19/2023.
+
+Firstly, let me explain how Android's OS (IOS is quite similar) works; I only regret not reading more about this when I first started working on `voxl-apps`. All Android apps are run in separate processes, in completely separate memory spaces (for safety and modularity). App processes, after they are opened, are actually never terminated. The processes are _paused_ when you switch out of them (when they are no longer dominating your screen), but those app processes may spawn other background services/processes that continue to monitor, say, GPS, even when the app isn't in the foreground. When you switch back to the app, the app's process is unpaused, continuing exactly where it left off (Linux's 
