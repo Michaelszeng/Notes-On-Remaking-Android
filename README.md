@@ -21,3 +21,8 @@ One downside to this architecture is that, if you wanted to literally spontaneou
 Coming up with this was pretty mind-boggling; there's an infinite number of ways you could design the `voxl-apps` OS and it's impossible to think it all through without trying to implement it. And it's really fun how every week I spend several hours brainstorming, then code a ton of stuff, then review it with my team, and we realize there is a better way to do things, then I end up re-brainstorming and then re-coding most of it the next week. Even though it's kind of painful, it's definitely not boring. But I think I prefer robotics and coding how to make things move.
 
 It's also kind of crazy to me that I have only 3 weeks of C training (MIT's 6.190) and one project that involved C and Zephyr under my belt, and now I am tasked with building an OS. It certainly is overwhelming when everything segfaults and all the POSIX pipes explode, but having the whole `voxl` codebase at my fingertips (and chatgpt) has made the learning experience pretty smooth; it's not been as difficult as it sounds. 
+
+
+Update 7/28/23: Fake Android is "done". Fair amount of torture testing and 1 rare/non-repeatable bug remaining that is pretty non-fatal. I started this project on Jun 22. 5 weeks and ~4,000 lines of code (that still exist in the codebase now) later, I not only have a robust OS working, I also went from a beginner level understanding of C, memory/pointers, and Linux to what I what I would call pretty experienced and confident in my skills. Much thanks to James for giving me a great project.
+
+Next step is to integrate this with Mavlink and ModalAI's other services so that this OS and its apps can actually make a drone fly.
