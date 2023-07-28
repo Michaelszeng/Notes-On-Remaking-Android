@@ -20,7 +20,7 @@ One downside to this architecture is that, if you wanted to literally spontaneou
 
 Coming up with this was pretty mind-boggling; there's an infinite number of ways you could design the `voxl-apps` OS and it's impossible to think it all through without trying to implement it. And it's really fun how every week I spend several hours brainstorming, then code a ton of stuff, then review it with my team, and we realize there is a better way to do things, then I end up re-brainstorming and then re-coding most of it the next week. Even though it's kind of painful, it's definitely not boring. But I think I prefer robotics and coding how to make things move.
 
-On the "painful" note, debugging multi-threaded multi-processed (is that a word?) applications is also miserable. On the bright side, now when I debug errors and segfaults not related to multi-whatevering, it's a piece of cake.
+While we're talking about painful things, debugging multi-threaded multi-processed (is that a word?) applications is extruciating; I often spend multiple full days debugging one segfault. On the bright side, now when I debug errors and segfaults not related to multi-whatevering, it's a piece of cake.
 
 It's also kind of crazy to me that I have only 3 weeks of C training (MIT's 6.190) and one project that involved C and Zephyr under my belt, and now I am tasked with building an OS. It certainly is overwhelming when everything segfaults and all the POSIX pipes explode, but having the whole `voxl` codebase at my fingertips (and chatgpt) has made the learning experience pretty smooth; it's not been as difficult as it sounds. 
 
